@@ -1,5 +1,32 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 34px;
+  margin-bottom: 120px;
+  background-color: var(--bg-color);
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+.header__nav {
+  margin-right: 174px;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  margin-right: 30px;
+}
+.header__item:last-child {
+  margin-right: 0;
+}
+.header__link {
+  padding: 10px;
+}
+
 .features-section {
   padding-top: 162px;
 }
@@ -206,31 +233,65 @@
   justify-content: flex-start;
 }
 
-.header {
+.footer-section {
+  padding-top: 106px;
+  padding-bottom: 106px;
+}
+.footer-section__div-content {
   display: flex;
   justify-content: center;
-  padding-top: 34px;
-  margin-bottom: 120px;
-  background-color: var(--bg-color);
 }
-.header__inner {
+.footer-section__div-content__links {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  margin-right: 200px;
 }
-.header__nav {
-  margin-right: 174px;
+.footer-section__div-content__links__col:nth-last-child(n+2) {
+  margin-right: 76px;
 }
-.header__list {
+.footer-section__div-content__links__col__title {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.footer-section__div-content__links__col__list li {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+.footer-section__div-content__info {
   display: flex;
+  flex-direction: column;
 }
-.header__item {
-  margin-right: 30px;
+.footer-section__div-content__info__adress {
+  display: flex;
+  margin-bottom: 10px;
 }
-.header__item:last-child {
-  margin-right: 0;
+.footer-section__div-content__info__adress__img1 {
+  height: 46px;
+  width: 46px;
 }
-.header__link {
-  padding: 10px;
+.footer-section__div-content__info__adress__img2 {
+  height: 36px;
+  width: 36px;
+}
+.footer-section__div-content__info__adress__txt {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 10px;
+}
+.footer-section__div-content__info__links {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-section__div-content__info__links > li:nth-last-child(n+2) {
+  margin-right: 24px;
+}
+.footer-section__div-content__info__links__img {
+  height: 40px;
+  width: 40px;
 }
 
 :root {
